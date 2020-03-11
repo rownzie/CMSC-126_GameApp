@@ -1,0 +1,121 @@
+body {
+	background-color: white;
+	background-image:url('punch.gif');
+	background-repeat: repeat-y;
+	background-position:center;
+}
+.border{
+	
+	background-color: white;
+	background-image: url('red.jpg');
+	background-size: 100% 100%;
+	color:transparent;
+	-webkit-background-clip:text;
+	-webkit-text-stroke: 2px rgb(128, 20, 60);
+	font-family:lato;
+	font-size: 60px;
+	text-align: left;
+	border-bottom: 5px inset rgb(220, 20, 60);
+	position: absolute;
+}
+
+div.controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  text-align: center;
+  background-image: url('gray.jpg');
+  position: fixed;
+  top: 10px;
+  right: 50px;
+  bottom: 10px;
+
+  width: 230px;
+  height: 550px;
+  
+}
+
+div.style {
+	font-size: 20px;
+	line-height: 44px;
+
+}
+h4{
+	padding: 0;
+	margin: 0;
+	color: black;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+h1, h2, h3{
+	font-family:courier;
+	text-shadow: 2px 2px red;
+	padding: 0;
+	margin: 0;
+	color: black;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+p {
+	font-size: 16px;
+	line-height: 30px;
+}
+
+#health {
+	padding: 0;
+	margin: 0;
+}
+
+#result {
+	font-family: verdana;
+	font-size: 20px;	
+	line-height: 40px;
+}
+
+input, select, button {
+  font-family: Lato;
+  text-align: center;
+  width: 100px;
+  height: 30px;
+  margin: 0 2px;
+  padding: 0 8px;
+  background-color: rgba(220, 20, 60);
+
+  border-style: solid;
+  border-color: rgb(128, 20, 60);
+  border-width: 0px;
+
+  transition-property: border-width, background-color, padding, border-color;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+input:hover, select:hover, button:hover {
+  padding: 0 8px;
+
+  border-style: solid;
+  border-color: rgba(128, 0, 0);
+  border-width: 2px;
+
+  transition-property: border-width, background-color, padding, border-color;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+input:disabled, select:disabled, button:disabled {
+  padding: 0 10px;
+  background-color: rgba(0, 0, 0, 0.1);
+
+  border-width: 0px;
+
+  transition-property: border-width, background-color, padding, border-color;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}

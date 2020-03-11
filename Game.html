@@ -1,0 +1,36 @@
+<!Ron Bryan M. Vertudes html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Punch Game Application</title>
+<link rel = "stylesheet" href = "Game.css" type = "text/css">
+</head>
+	<body>
+	<h4 class="border"><b>Defend your Belt</b></h4>
+	<div class = "main">
+		<div class="style"><br><br>
+			<p id = "result"></p>
+		<button id = "reset" style = "display: none" onclick = "reset()"> Reset </button>
+	</div>
+	 <div class = "controlsContainer">
+        <div class = "controls">
+          <p id = "health"> </p>
+          <h3> Toss a coin! </h3>
+            <div>
+              <select id = "coin">
+                <option value = "0"> Heads </option>
+                <option value = "1"> Tails </option>
+              </select>
+              <button id = "coinTosser" onclick = "tossCoin()"> Toss coin </button>
+            </div>
+          <h3>Choose your action!</h3>
+            <div>
+              <button id = "attack" disabled = "true" onclick = "playerAttack()"> Attack </button>
+              <button id = "defend" disabled = "true" onclick = "playerDefend()"> Defend </button>
+            </div>
+        </div>
+      </div>
+    </div>
+	<script src="Game.js"></script>
+  </body>
+</html>
